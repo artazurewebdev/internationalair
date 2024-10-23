@@ -271,7 +271,7 @@ if pagechoice == "HyperJets":
         st.write("Italian Banana Bread")
         st.write("English Shortbread")
         st.write("Strawberry Poundcake")
-        st.markdown("<u>**Drinks**</u>", unsafe_allow_html=True)
+        st.markdown("<u>**Drinks (Up to 3 per meal)**</u>", unsafe_allow_html=True)
         st.write("Water")
         st.write("1% Milk")
         st.write("Bubble Tea: Choice of Sugar, Choice of Ice")
