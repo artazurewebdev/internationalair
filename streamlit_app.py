@@ -96,6 +96,7 @@ if pagechoice == "InternationalAir":
 if pagechoice == "Karman Aircrafts":
     st.title("Karman Aircrafts")
 
+    st.image("jetpicture1.png")
     st.subheader("K100")
     st.write("Karman K100 Aircraft")
     st.write("Advanced aircraft designed for private flight")
