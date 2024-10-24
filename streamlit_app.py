@@ -5,7 +5,7 @@ import time
 st.sidebar.title("InternationalAir")
 st.sidebar.subheader("The best way to travel")
 
-pageselect = ["Home", "InternationalAir", "HyperJets"]
+pageselect = ["Home", "HyperJets", "InternationalAir", "Karman Aircrafts"]
 pagechoice = st.sidebar.selectbox("Select Page", pageselect)
 
 if pagechoice == "Home":
@@ -19,6 +19,7 @@ if pagechoice == "InternationalAir":
         "Boeing 737-MAX 8"
         "Boeing 737-MAX 10"
         "Comac C919"
+        "Comac C929"
         "Airbus A320"
         "Airbus A321"
         "Airbus A220"
@@ -91,6 +92,39 @@ if pagechoice == "InternationalAir":
         st.write("Seoul | Gimpo International Airport")
         st.write("Pyongyang | Pyongyang Sunan International Airport")
         st.write("Sydney | Sydney Airport")
+
+if pagechoice == "Karman Aircrafts":
+    st.title("Karman Aircrafts")
+
+    st.subheader("K100")
+    st.write("Karman K100 Aircraft")
+    st.write("Advanced aircraft designed for private flight")
+    st.write("Furthest endurance out of all private jets")
+    st.write("Up to 10,000 miles of flight")
+    st.write("Luxurious and seamless design")
+    st.write("Utmost comfort designed for HyperJets exquisitely")
+    st.write("Extreme comfort for flight attendants and passengers alike")
+    st.write("Up to 600kts at near-supersonic speeds")
+    st.write("Silent engines lower cabin noise down to 15-30 decibels")
+    st.write("Best aircraft in the market")
+
+    st.subheader("K360")
+    st.write("Karman K360 Aircraft")
+    st.write("Advanced supersonic business jet designed for swift flight")
+    st.write("Extreme endurance with up to 8,000 miles of flight")
+    st.write("Seamless Aerodynamic design to reduce sonic boom")
+    st.write("Designed to lower sonic boom to 60 decibels at height of flight")
+    st.write("Silent engines lower cabin noise down to 30-40 decibels")
+    st.write("Comfortable design for passengers")
+
+    st.subheader("Upcoming Rollouts")
+    st.write("K200 | Regional Business Jet for extremely fast transport")
+    st.write("K361 | Supersonic Commercial Jet")
+    st.write("K300 | International Business Jet for utmost comfort")
+    st.write("K606 | Domestic Commercial Jet")
+    st.write("K616 | Domestic Commercial Jet")
+    st.write("K626 | Long-range Large International Commercial Jet")
+    st.write("K400 | Supersonic Business Jet")
 
 if pagechoice == "HyperJets":
 
