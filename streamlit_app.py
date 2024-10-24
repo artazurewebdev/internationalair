@@ -11,6 +11,9 @@ pagechoice = st.sidebar.selectbox("Select Page", pageselect)
 if pagechoice == "Home":
     st.title("InternationalAir")
 
+    st.subheader("HyperJets Private Aircraft Charter")
+    st.write("The best aircraft charter company")
+
 if pagechoice == "InternationalAir":
     st.title("InternationalAir Commercial")
 
@@ -152,6 +155,7 @@ if pagechoice == "HyperJets":
         "Cessna Citation X": 3700, 
         "Cessna Citation Latitude": 3450,
         "Dassault Falcon 6X": 4250,
+        "Dassault Falcon 7X": 4500,
         "Embraer Praetor 500": 3600,
         "Gulfstream G280": 3900, 
         "Cessna Citation Longitude": 3750, 
@@ -170,15 +174,16 @@ if pagechoice == "HyperJets":
         "Bombardier Global 6000": 4600,
         "Dassault Falcon 10X": 4750,
         "Karman HyperJets Global K100": 4700,
-        "Comac C919": 20000,
-        "Airbus A320": 22000,
-        "Boeing 737-900":24500,
-        "Boeing 737-MAX": 25000, 
-        "Boeing 797": 27500,
+        "Comac C919 Business Extension": 20000,
+        "Airbus A320 Corporate Extension": 22000,
+        "Airbus ACJ319NEO Corporate Jet": 8000,
+        "Boeing 737-900 BBJ":24500,
+        "Boeing 737-MAX 10 BBJ": 25000, 
+        "Boeing 797 BBJ": 27500,
         "Bombardier CRJ1000": 21000,
         "Karman HyperJets Supersonic K360 Global": 12000,
-        "Boeing 777, HyperJets Emerald Aircraft": 30000,
-        "Boeing 747-8i, HyperJets Diamond Aircraft": 40000,
+        "Boeing 777 BBJ, HyperJets Emerald Aircraft": 30000,
+        "Boeing 747-8i BBJ, HyperJets Diamond Aircraft": 40000,
         "Scaled Composites VSS Unity Hypersonic Jet": 500000
     }
 
