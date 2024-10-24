@@ -116,6 +116,7 @@ if pagechoice == "Karman Aircrafts":
     st.write("Designed to lower sonic boom to 60 decibels at height of flight")
     st.write("Silent engines lower cabin noise down to 30-40 decibels")
     st.write("Comfortable design for passengers")
+    st.write("Extremely fast: up to 1500kts")
 
     st.subheader("Upcoming Rollouts")
     st.write("K200 | Regional Business Jet for extremely fast transport")
