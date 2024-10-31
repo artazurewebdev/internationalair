@@ -273,7 +273,7 @@ if pagechoice == "CityLink":
     st.subheader("Estimated Quote")
 
     overnightprice = 150 * overnight
-    fuelcost = (bustype / 5) * (bustime * 2)
+    fuelcost = bustype * 0.2 * bustime * 2
     tripcost = bustype * 2 * bustime + fuelcost
     driverfee = 25 * bustime * 2
     totalbuscost = overnightprice + tripcost + driverfee
