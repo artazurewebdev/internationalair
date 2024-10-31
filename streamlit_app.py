@@ -258,8 +258,13 @@ if pagechoice == "CityLink":
     contact_ph = st.number_input("Contact Phone Number", min_value=000000000000)
     contactemail = st.text_input("Contact Email")
 
+    if st.number_input("Passengers Count", min_value=0):
+        st.success("Please accurately calculate the buses needed for the amount of passengers you have entered. We will contact you if the amount of buses you selected cannot host that number of passengers.")
+
     busleavedate = st.date_input("Day of Departure")
     busleavetime = st.time_input("Time of Departure")
+
+    bustime = st.number_input("One-way Duration of ride (hrs)", min_value=0)
 
     busreturndate = st.date_input("Day of Return")
     busreturntime = st.date_input("Time of Return")
@@ -268,25 +273,23 @@ if pagechoice == "CityLink":
 
     st.subheader("Estimated Quote")
 
-    # Change the bustype selection to ensure correct mapping to costs
     bustype = st.selectbox("Select Bus", list(bus_selection.keys()))
-    buscost = bus_selection[bustype]  # Get the cost associated with the selected bus
 
-    # Input for bustime
-    bustime = st.number_input("One-way Duration of ride", min_value=0)
+    buscount = st.number_input("Please enter the amount of required buses", min_value=0)
 
-    # Calculate costs
+    buscost = bus_selection[bustype]
+
     overnightprice = 150 * overnight
-    fuelcost = buscost * 0.2 * float(bustime) * 2  # Convert bustime to float
+    fuelcost = buscost * 0.2 * float(bustime) * 2
     tripcost = buscost * 2 * float(bustime) + fuelcost
     driverfee = 25 * float(bustime) * 2
     totalbuscost = overnightprice + tripcost + driverfee
+    fullbuscost = totalbuscost * buscount
 
-    # Display costs
     st.write(f"Trip Cost: **${tripcost:,.2f}**")
     st.write(f"Overnight Stay Fee: **${overnightprice:,.2f}**")
     st.write(f"Driver Fee: **${driverfee:,.2f}**")
-    st.write(f"Total Cost: **${totalbuscost:,.2f}**")
+    st.write(f"Total Cost: **${fullbuscost:,.2f}**")
 
 
 if pagechoice == "Karman Aircrafts":
