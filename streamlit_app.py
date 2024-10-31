@@ -4,20 +4,6 @@ import time
 
 st.set_page_config(page_title="HyperJets", page_icon="🤖", layout="centered", initial_sidebar_state="auto")
 
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #F6FCFF; /* Set background color */
-    }
-    .stMarkdown, .stHeader, .stSubheader, .stTitle, .stText {
-        color: #000000; /* Set font color */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 st.sidebar.title("InternationalAir")
 st.sidebar.subheader("The best way to travel")
 
