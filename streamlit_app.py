@@ -117,7 +117,7 @@ if pagechoice == "CityLink":
         st.write("Ford Transit Van XL | Seats up to 13 | Regional Trips")
         st.write("Ford Transit Van XLT | Seats up to 13 | Regional Trips")
         st.write("Mercedes Sprinter Passenger Van | Seats up to 15 (High Roof) | Regional-Long Distance Trips")
-        st.write("Mercedes Sprinter Pax-Van Select | Seats up to 15 (High Roof) | Long-Distance Trips")
+        st.write("Mercedes Sprinter Passenger Van Select | Seats up to 15 (High Roof) | Long-Distance Trips")
         st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
         st.write(" - Smart TV including mandatory Safety Film")
         st.write(" - VacuLux A/C and Heating")
@@ -187,6 +187,25 @@ if pagechoice == "CityLink":
         st.write(" - Catering Available for additional fee")
         st.write(" - 6G WiFi Available for additional fee")
 
+    bus_selection = {
+        "School Bus Type A",
+        "School Bus Type B", 
+        "School Bus Type C",
+        "School Bus Type D",
+        "Ford Transit Van XL",
+        "Ford Transit Van XLT",
+        "Mercedes Sprinter Passenger Van",
+        "Mercedes Sprinter Passenger Van Select",
+        "Ford E-450",
+        "MCI J3500",
+        "MCI J4500",
+        "MCI J4500 Charge [SILENT]",
+        "MCI D4000"
+        "MCI D4500"
+        "MCI D4505"
+        "MCI D45 CRTe LE Charge"
+    }
+
     with st.expander("Launch Centers"):
         st.markdown("<u>Transit costs can be avoided by departing at a Launch Center</u>", unsafe_allow_html=True)
         st.write("Atlanta, GA: Atlanta Civic Center Staton")
@@ -203,6 +222,51 @@ if pagechoice == "CityLink":
         st.write("Grand Central Station: CityLink Launch Center at NYC Pier 97")
         st.write("New York City Center: CityLink Grand Center at Battery Park Whitehall Terminal")
         st.write("Capital Center: Washington DC at Dupont Circle")
+
+    launchcenters = [
+        "Atlanta Civic Center"
+        "Savannah/Hilton Airport"
+        "Jacksonville Hemming Plaza"
+        "South Florida at Miami"
+        "Tampa/Orlando Lakeland"
+        "Florida Panhandle at Tallahassee"
+        "Alabama at Mobile"
+        "New Orleans at CityPark on Filmore Avenue"
+        "Shreveport"
+        "Memphis Airport"
+        "Saint Louis at Big Bend and Wydown"
+        "Grand Central NYC"
+        "City Center at Whitehall Terminal"
+        "Capital Center"
+    ]
+
+    stationcenter = st.selectbox("Are you departing from a Launch Center?", ["Yes", "No"])
+
+    if stationcenter == "Yes":
+        st.dropdown("Select Center", launchcenters)
+
+    if stationcenter == "No":
+        busdeparture = st.text_input("Departure Address")
+        st.write(f"Departing From: **{busdeparture}**")
+
+    busarrival = st.text_input("Arrival Address")
+    st.write(f"Arriving At: **{busarrival}**")
+
+    st.text_input("Full Name")
+    st.number_input("Age", min_value=18)
+    contact_ph = st.number_input("Contact Phone Number", min_value=000000000000)
+    contactemail = st.text_input("Contact Email")
+
+    busleavedate = st.date_input("Day of Departure")
+    busleavetime = st.time_input("Time of Departure")
+
+    busreturndate = st.date_input("Day of Return")
+    busreturntime = st.date_input("Time of Return")
+
+    overnight = st.number_input("Nights staying at destination", min_value=0)
+
+    bustype = st.dropdown("Select Bus", bus_selection)
+
 
 if pagechoice == "Karman Aircrafts":
     st.title("Karman Aircrafts")
