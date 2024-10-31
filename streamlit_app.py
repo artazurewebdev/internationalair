@@ -187,6 +187,23 @@ if pagechoice == "CityLink":
         st.write(" - Catering Available for additional fee")
         st.write(" - 6G WiFi Available for additional fee")
 
+    with st.expander("Launch Centers"):
+        st.markdown("<u>Transit costs can be avoided by departing at a Launch Center</u>", unsafe_allow_html=True)
+        st.write("Atlanta, GA: Atlanta Civic Center Staton")
+        st.write("Savannah, GA: Savannah/Hilton Airport north of Gulfstream AC")
+        st.write("Jacksonville, FL: Skyway Hemming Plaza Station")
+        st.write("South Florida Station: Miami, FL Brownsville Metro Station")
+        st.write("Tampa/Orlando Lakeland Station: Lakeland Train Station")
+        st.write("Florida Panhandle Station: CityLink Center at Tallahassee International Airport")
+        st.write("Alabama Station: Mobile, AL Center at Bishop State Community College")
+        st.write("New Orleans Station: CityLink Center at City Park on Filmore Avenue")
+        st.write("Shreveport Station: CityLink Launch Center at Barksdale AFB")
+        st.write("Memphis Station: Mission Launch Center at B Gates in Memphis International Airport")
+        st.write("Saint Louis Center: CityLink Grand Central at Big Bend and Wydown")
+        st.write("Grand Central Station: CityLink Launch Center at NYC Pier 97")
+        st.write("New York City Center: CityLink Grand Center at Battery Park Whitehall Terminal")
+        st.write("Capital Center: Washington DC at Dupont Circle")
+
 if pagechoice == "Karman Aircrafts":
     st.title("Karman Aircrafts")
 
