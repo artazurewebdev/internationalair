@@ -273,7 +273,7 @@ if pagechoice == "CityLink":
     buscost = bus_selection[bustype]  # Get the cost associated with the selected bus
 
     # Input for bustime
-    bustime = st.number_input("One-way Duration of ride", min_value=0.0)
+    bustime = st.number_input("One-way Duration of ride", min_value=0)
 
     # Calculate costs
     overnightprice = 150 * overnight
