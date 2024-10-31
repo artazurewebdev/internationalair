@@ -2,10 +2,26 @@ import streamlit as st
 from datetime import datetime
 import time
 
+st.set_page_config(page_title="HyperJets", page_icon="🤖", layout="centered", initial_sidebar_state="auto")
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #F6FCFF; /* Set background color */
+    }
+    .stMarkdown, .stHeader, .stSubheader, .stTitle, .stText {
+        color: #000000; /* Set font color */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.sidebar.title("InternationalAir")
 st.sidebar.subheader("The best way to travel")
 
-pageselect = ["Home", "HyperJets", "InternationalAir", "CityLink", "Karman Aircrafts"]
+pageselect = ["Home", "HyperJets", "InternationalAir", "CityLink", "Karman Aircrafts", "Careers"]
 pagechoice = st.sidebar.selectbox("Select Page", pageselect)
 
 if pagechoice == "Home":
@@ -682,3 +698,11 @@ if pagechoice == "HyperJets":
             st.write("Customs: Remember, standard international customs policies still apply while flying private")
             st.write("Customs: A valid visa for the purpose of the trip and valid passport are required to fly")
             st.write("Customs: We will contact you via email to request validation regarding visas")
+
+if pagechoice == "Careers":
+    st.title("Careers")
+    st.subheader("HyperJets")
+    st.subheader("InternationalAir")
+    st.subheader("CityLink (NEW)")
+    st.subheader("Karman Aircrafts")
+    st.subheader("General Management")
