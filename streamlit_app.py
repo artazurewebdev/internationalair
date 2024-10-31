@@ -244,11 +244,11 @@ if pagechoice == "CityLink":
 
     if stationcenter == "Yes":
         launchcenterselection = st.selectbox("Select Center", launchcenters)
+        st.write(f"Departing From: **{launchcenterselection}**")
 
     if stationcenter == "No":
         busdeparture = st.text_input("Departure Address")
-    
-    st.write(f"Departing From: **{busdeparture}** **{launchcenterselection}**")
+        st.write(f"Departing From: **{busdeparture}**")
 
     busarrival = st.text_input("Arrival Address")
     st.write(f"Arriving At: **{busarrival}**")
