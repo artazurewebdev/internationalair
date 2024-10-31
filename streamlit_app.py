@@ -265,7 +265,7 @@ if pagechoice == "CityLink":
 
     overnight = st.number_input("Nights staying at destination", min_value=0)
 
-    bustype = st.dropdown("Select Bus", bus_selection)
+    bustype = st.selectbox("Select Bus", bus_selection)
 
 
 if pagechoice == "Karman Aircrafts":
