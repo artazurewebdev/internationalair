@@ -224,19 +224,19 @@ if pagechoice == "CityLink":
         st.write("Capital Center: Washington DC at Dupont Circle")
 
     launchcenters = [
-        "Atlanta Civic Center"
-        "Savannah/Hilton Airport"
-        "Jacksonville Hemming Plaza"
-        "South Florida at Miami"
-        "Tampa/Orlando Lakeland"
-        "Florida Panhandle at Tallahassee"
-        "Alabama at Mobile"
-        "New Orleans at CityPark on Filmore Avenue"
-        "Shreveport"
-        "Memphis Airport"
-        "Saint Louis at Big Bend and Wydown"
-        "Grand Central NYC"
-        "City Center at Whitehall Terminal"
+        "Atlanta Civic Center",
+        "Savannah/Hilton Airport",
+        "Jacksonville Hemming Plaza",
+        "South Florida at Miami",
+        "Tampa/Orlando Lakeland",
+        "Florida Panhandle at Tallahassee",
+        "Alabama at Mobile",
+        "New Orleans at CityPark on Filmore Avenue",
+        "Shreveport",
+        "Memphis Airport",
+        "Saint Louis at Big Bend and Wydown",
+        "Grand Central NYC",
+        "City Center at Whitehall Terminal",
         "Capital Center"
     ]
 
