@@ -692,7 +692,15 @@ if pagechoice == "HyperJets":
 
 if pagechoice == "Palafin":
     st.title("Palafin Aerospace")
-    st.sidebar.image("Palafin Logo.png", width=100)
+    st.sidebar.image("Palafin Logo.png", width=250)
+
+    st.subtitle("Fleet")
+    st.markdown("<h4 style='font-size:20px;'>Palafin 1</h4>", unsafe_allow_html=True)
+    with st.expander(""):
+        st.write("")
+    st.markdown("<h4 style='font-size:20px;'>Palafin 2</h4>", unsafe_allow_html=True)
+
+    st.subtitle("Missions")
 
 if pagechoice == "Careers":
     st.title("Careers")
