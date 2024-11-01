@@ -98,6 +98,11 @@ if pagechoice == "InternationalAir":
         st.write("Pyongyang | Pyongyang Sunan International Airport")
         st.write("Sydney | Sydney Airport")
 
+    col1, col2, col3 = st.columns(3)
+    col1.metric(label="Flights Fulfilled", value=1472, delta=14)
+    col2.metric(label="Airports", value=59, delta=3)
+    col3.metric(label="Carbon Emissions", value=16, delta=-5)
+
 if pagechoice == "CityLink":
     st.title("CityLink Charter Buses")
     
@@ -690,5 +695,11 @@ if pagechoice == "Careers":
     st.subheader("HyperJets")
     st.subheader("InternationalAir")
     st.subheader("CityLink (NEW)")
+    with st.expander("Driving"):
+        st.write("Charter Bus Driver | Up to $32.60/hr (4 Available at Jacksonville Launch Station)")
+        st.write("Overnight Bus Driver | Up to $37.60/hr (7 Available at Jacksonville Launch Station)")
+        st.write("Charter Bus Driver | Up to $35.24/hr (1 Available at Saint Louis Center)")
+    with st.expander("Management"):
+        st.write("Launch Center Night Manager | Up to $56.20/hr (1 Available at New York City Center)")
     st.subheader("Karman Aircrafts")
     st.subheader("General Management")
