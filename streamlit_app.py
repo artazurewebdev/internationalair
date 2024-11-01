@@ -7,7 +7,7 @@ st.set_page_config(page_title="HyperJets", page_icon="🤖", layout="centered", 
 st.sidebar.title("InternationalAir")
 st.sidebar.subheader("The best way to travel")
 
-pageselect = ["Home", "HyperJets", "InternationalAir", "CityLink", "Karman Aircrafts", "Careers"]
+pageselect = ["Home", "HyperJets", "InternationalAir", "CityLink", "Karman Aircrafts", "Palafin", "Careers"]
 pagechoice = st.sidebar.selectbox("Select Page", pageselect)
 
 if pagechoice == "Home":
@@ -690,9 +690,20 @@ if pagechoice == "HyperJets":
             st.write("Customs: A valid visa for the purpose of the trip and valid passport are required to fly")
             st.write("Customs: We will contact you via email to request validation regarding visas")
 
+if pagechoice == "Palafin":
+    st.title("Palafin Aerospace")
+    st.sidebar.image("Palafin Logo.png", width=100)
+
 if pagechoice == "Careers":
     st.title("Careers")
     st.subheader("HyperJets")
+    st.write("ONLY HIRES FROM EMBRY-RIDDLE AERONAUTICAL UNIVERSITY FOR PILOTING CAREERS")
+    with st.expander("Exception Universities"):
+        st.write("If an applicant shows exceptional skills in flight, the following universities may be accepted")
+        st.write("University of North Dakota")
+        st.write("Purdue University")
+        st.write("Ohio State University")
+        st.write("University of Oklahoma")
     st.subheader("InternationalAir")
     st.subheader("CityLink (NEW)")
     with st.expander("Driving"):
