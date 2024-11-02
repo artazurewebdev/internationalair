@@ -700,7 +700,7 @@ if pagechoice == "Palafin":
         st.write("")
     st.markdown("<h4 style='font-size:20px;'>Palafin 2</h4>", unsafe_allow_html=True)
 
-    st.subtitle("Missions")
+    st.subheader("Missions")
 
 if pagechoice == "Careers":
     st.title("Careers")
