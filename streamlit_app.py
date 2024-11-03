@@ -296,19 +296,17 @@ if pagechoice == "CityLink":
 
     busamenities = {
         f"7G Wi-Fi | $100": 100,
-        f"In-flight Chef | $1200": 1200,
-        f"Pet Luxury Set for Cats | $800": 800,
-        f"Pet Luxury Set for Dogs | $800": 800,
+        f"Onboard Chef (VanHool Astromega ONLY) | $1000": 1200,
         f"Onboard NetFlix Access | $15": 15,
         f"Onboard Hulu Access | $15": 15,
         f"Onboard Peacock Access | $15": 15,
         f"Onboard Disney+ Access | $15": 15,
-        f"Custom HyperJets iPhone 16 | $1500": 1500,
-        f"Custom HyperJets Matte Sticker Set | $5": 5
     }
 
     # Amenities selection
     bus_selected_amenities = st.multiselect("Select additional amenities", busamenities.keys())
+
+    st.write("Please note that onboard Netflix, Hulu, Peacock, and Disney+ Access is only available for vehicles with a personal screen")
 
     bus_amenity_cost = sum(busamenities[busamenity] for busamenity in bus_selected_amenities)
 
