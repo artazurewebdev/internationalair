@@ -166,13 +166,21 @@ if pagechoice == "CityLink":
         st.write(" - Restroom 🚻")
         st.write(" - Catering Available for additional fee 🥘")
         st.write(" - 6G WiFi Available for additional fee 🛜")
-        st.markdown("<u>**Intercontinental Charter Bus**</u>", unsafe_allow_html=True)
+        st.markdown("<u>**Intercontinental™ Charter Bus**</u>", unsafe_allow_html=True)
         st.write("MCI J4500 | Seats up to 60 | Cross-Continental Trips")
         st.write("MCI J4500 Charge | Seats up to 56 | Cross-Continental Trips")
         st.write("MCI D4000 | Seats up to 50 | Long-Distance Trips")
         st.write("MCI D4500 | Seats up to 54 | Cross-Continental Trips")
         st.write("MCI D4505 | Seats up to 55 | Cross-Continental Trips")
         st.write("MCI D45 CRTe LE CHARGE | Seats up to 54 | Cross-Continental Trips")
+        st.write("VanHool T15 Acron | Seats up to 52 | Cross-Continental Trips")
+        st.write("VanHool T17 Acron | Seats up to 55 | Cross-Continental Trips")
+        st.write("VanHool T16 Astron | Seats up to 55 | Cross-Continental Trips")
+        st.write("VanHool TDX21 Altano | Seats up to 65 | Cross-Continental Trips")
+        st.write("VanHool TDX25 Astromega | Seats up to 90 | International Double-Decker Series")
+        st.write("VanHool TDX27 Astromega | Seats up to 91 | International Double-Decker Series")
+        st.write("VanHool CX45 | Seats up to 60 | Cross-Continental Trips")
+        st.write("VanHool T17 Astron | Seats up to 55 | Cross-Continental Trips")
         st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
         st.write(" - Smart TV including mandatory Safety Film 🎦")
         st.write(" - Personal Video with Satellite TV 🎦")
@@ -188,10 +196,10 @@ if pagechoice == "CityLink":
         st.write(" - Can be paired with DirecTV 📻")
         st.write(" - ADA Accessible with rear ramp ♿")
         st.write(" - Anti-carsick Light and Air System 🛡️")
-        st.write(" - Snack Catering Available 🌰")
+        st.write(" - Catering Available 🥘")
         st.write(" - Comfort Tray available for J-Series Vehicles 🗔")
         st.write(" - Restroom 🚻")
-        st.write(" - Catering Available for additional fee 🥘")
+        st.write(" - Onboard Chef Available for additional fee (VanHool Astromega ONLY) 👨‍🍳")
         st.write(" - 6-7G WiFi Available for additional fee 🛜")
 
     bus_selection = {
@@ -210,7 +218,15 @@ if pagechoice == "CityLink":
         "MCI D4000": 500,
         "MCI D4500": 600,
         "MCI D4505": 650,
-        "MCI D45 CRTe LE Charge": 750
+        "MCI D45 CRTe LE Charge": 750,
+        "VanHool T15 Acron": 700,
+        "VanHool T17 Acron": 750,
+        "VanHool T16 Astron": 775,
+        "VanHool TDX21 Altano": 825,
+        "VanHool TDX25 Astromega [DOUBLE-DECKER]": 1000,
+        "VanHool TDX27 Astromega [DOUBLE-DECKER]": 1025,
+        "VanHool CX45": 775,
+        "VanHool T17 Astron": 750
     }
 
     with st.expander("Launch Centers"):
@@ -278,6 +294,24 @@ if pagechoice == "CityLink":
 
     overnight = st.number_input("Nights staying at destination", min_value=0)
 
+    busamenities = {
+        f"7G Wi-Fi | $100": 100,
+        f"In-flight Chef | $1200": 1200,
+        f"Pet Luxury Set for Cats | $800": 800,
+        f"Pet Luxury Set for Dogs | $800": 800,
+        f"Onboard NetFlix Access | $15": 15,
+        f"Onboard Hulu Access | $15": 15,
+        f"Onboard Peacock Access | $15": 15,
+        f"Onboard Disney+ Access | $15": 15,
+        f"Custom HyperJets iPhone 16 | $1500": 1500,
+        f"Custom HyperJets Matte Sticker Set | $5": 5
+    }
+
+    # Amenities selection
+    bus_selected_amenities = st.multiselect("Select additional amenities", busamenities.keys())
+
+    bus_amenity_cost = sum(busamenities[busamenity] for busamenity in bus_selected_amenities)
+
     st.subheader("Estimated Quote")
 
     bustype = st.selectbox("Select Bus", list(bus_selection.keys()))
@@ -290,11 +324,12 @@ if pagechoice == "CityLink":
     fuelcost = buscost * 0.2 * float(bustime) * 2
     tripcost = buscost * 2 * float(bustime) + fuelcost
     driverfee = 25 * float(bustime) * 2
-    totalbuscost = overnightprice + tripcost + driverfee
+    totalbuscost = overnightprice + tripcost + driverfee + bus_amenity_cost
     fullbuscost = totalbuscost * buscount
 
     st.write(f"Trip Cost: **${tripcost:,.2f}**")
     st.write(f"Overnight Stay Fee: **${overnightprice:,.2f}**")
+    st.write(f"Amenity Cost: **${bus_amenity_cost:,.2f}**")
     st.write(f"Driver Fee: **${driverfee:,.2f}**")
     st.write(f"Total Cost: **${fullbuscost:,.2f}**")
 
@@ -642,6 +677,7 @@ if pagechoice == "HyperJets":
     st.text_input("Input contact email")
 
     st.subheader("Purchase with Credit Card")
+    st.success("Fastest Option")
     st.write(f"Amount to charge: **${total_cost:,.2f}**")
 
     creditcard = st.number_input("Credit Card Number", min_value=100000000000000)
@@ -658,7 +694,8 @@ if pagechoice == "HyperJets":
 
         st.write("Thank you for choosing our charter service!")
 
-    st.subheader("Request Quote")
+    st.subheader("Request a Quote")
+    st.success("Best Option")
     with st.expander("Why request a quote?"):
         st.write("Requesting a quote allows you to make edits and also makes more space for customization. This also allows other forms of payment such as cash, and check. Mail-in payments are only allowed for flights booked at least 14 days in advance.")
 
@@ -696,7 +733,7 @@ if pagechoice == "Palafin":
 
     st.subheader("Fleet")
     st.markdown("<h4 style='font-size:20px;'>Palafin 1</h4>", unsafe_allow_html=True)
-    with st.expander(""):
+    with st.expander("Overview"):
         st.write("")
     st.markdown("<h4 style='font-size:20px;'>Palafin 2</h4>", unsafe_allow_html=True)
 
