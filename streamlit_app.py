@@ -12,12 +12,14 @@ pagechoice = st.sidebar.selectbox("Select Page", pageselect)
 
 if pagechoice == "Home":
     st.title("InternationalAir")
+    st.sidebar.image("InternationalAir.png", width=250)
 
     st.subheader("HyperJets Private Aircraft Charter")
     st.write("The best aircraft charter company")
 
 if pagechoice == "InternationalAir":
     st.title("InternationalAir Commercial")
+    st.sidebar.image("InternationalAir.png", width=250)
 
     commercialaircrafts = {
         "Boeing 737-MAX"
@@ -62,7 +64,7 @@ if pagechoice == "InternationalAir":
         st.write("Oklahoma City | Will Rogers World Airport")
         st.write("Kansas City | Kansas City International Airport")
         st.write("Chicago | Chicago O'Hare International Airport")
-        st.write("Chicago | Chicag Midway International Airport")
+        st.write("Chicago | Chicago Midway International Airport")
         st.write("Indianapolis | Indianapolis International Airport")
         st.write("Louisville | Louisville International Airport")
         st.write("Cincinnati | Cincinnati/Northern Kentucky International Airport")
@@ -105,6 +107,7 @@ if pagechoice == "InternationalAir":
 
 if pagechoice == "CityLink":
     st.title("CityLink Charter Buses")
+    st.sidebar.image("CityLink Logo.png", width=250)
     
     with st.expander("Fleet"):
         st.markdown("<u>**School Bus (STATEWIDE TRIPS ONLY)**</u>", unsafe_allow_html=True)
@@ -333,6 +336,7 @@ if pagechoice == "CityLink":
 
 
 if pagechoice == "Karman Aircrafts":
+    st.sidebar.image("Karman.png", width=250)
     st.title("Karman Aircrafts")
 
     st.image("jetpicture1.png")
@@ -368,6 +372,7 @@ if pagechoice == "Karman Aircrafts":
     st.write("K400 | Supersonic Business Jet")
 
 if pagechoice == "HyperJets":
+    st.sidebar.image("HyperJets.png", width=250)
 
     aircrafts = {
         "Beechcraft Hawker 400XP": 3500, 
