@@ -17,6 +17,17 @@ if pagechoice == "Home":
     st.subheader("HyperJets Private Aircraft Charter")
     st.write("The best aircraft charter company")
 
+    st.success("Please browse our website by selecting a page in the sidebar")
+
+    st.markdown("<h4 style='font-size:20px;'>Live Stocks</h4>", unsafe_allow_html=True)
+
+    col1, col2, col3, col4, col5 = st.columns(5)
+    col1.metric(label="InternationalAir Foundation", value=726.56, delta=1.40)
+    col2.metric(label="HyperJets Private Jet Charter", value=1242.90, delta=3.56)
+    col3.metric(label="CityLink Charter Bus", value=627.78, delta=-0.09)
+    col4.metric(label="Karman Aircrafts", value=124.27, delta=2.08)
+    col5.metric(label="Palafin", value=209.51, delta =-1.41)
+
 if pagechoice == "InternationalAir":
     st.title("InternationalAir Commercial")
     st.sidebar.image("InternationalAir.png", width=250)
