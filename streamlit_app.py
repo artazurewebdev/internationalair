@@ -110,6 +110,7 @@ if pagechoice == "InternationalAir":
         st.write("Seoul | Gimpo International Airport")
         st.write("Pyongyang | Pyongyang Sunan International Airport")
         st.write("Sydney | Sydney Airport")
+        st.write("Teterboro | Teterboro Airport")
 
     col1, col2, col3 = st.columns(3)
     col1.metric(label="Flights Fulfilled", value=1472, delta=14)
@@ -117,233 +118,288 @@ if pagechoice == "InternationalAir":
     col3.metric(label="Carbon Emissions", value=16, delta=-5)
 
 if pagechoice == "CityLink":
-    st.title("CityLink Charter Buses")
-    st.sidebar.image("CityLink Logo.png", width=250)
-    
-    with st.expander("Fleet"):
-        st.markdown("<u>**School Bus (STATEWIDE TRIPS ONLY)**</u>", unsafe_allow_html=True)
-        st.write("Type A | Seats up to 10 | Local Trips (SINGLE-DAY TRIPS ONLY)")
-        st.write("Type B | Seats up to 18 | Local and Regional Trips")
-        st.write("Type C | Seats up to 28 | Regional Trips")
-        st.write("Type D | Seats up to 40 | Regional Trips")
-        st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
-        st.write(" - USB Outlets 🔌")
-        st.write(" - Cupholders 🥤")
-        st.write(" - CityLink Comfort+ Seats 💺")
-        st.write(" - Window Shades 🪟")
-        st.write(" - UltraSafety Seatbelts 🪢")
-        st.write(" - Rear Luggage Compartment 🧳")
-        st.write(" - CityLink Premium A/C ☁️")
-        st.markdown("<u>**13 Passenger Vans**</u>", unsafe_allow_html=True)
-        st.write("Ford Transit Van XL | Seats up to 13 | Regional Trips")
-        st.write("Ford Transit Van XLT | Seats up to 13 | Regional Trips")
-        st.write("Mercedes Sprinter Passenger Van | Seats up to 15 (High Roof) | Regional-Long Distance Trips")
-        st.write("Mercedes Sprinter Passenger Van Select | Seats up to 15 (High Roof) | Long-Distance Trips")
-        st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
-        st.write(" - Smart TV including mandatory Safety Film 🎦")
-        st.write(" - VacuLux A/C and Heating ☁️")
-        st.write(" - UltraSafety+ Seatbelts 🪢")
-        st.write(" - USB and NEMA 5-15 Charger Plugs 🔌")
-        st.write(" - Cupholders 🥤")
-        st.write(" - CityLink DeluxeHaul Reclining Seats 💺")
-        st.write(" - SunBlok Window Shades 🪟")
-        st.write(" - Carryon Luggage Storage 🧳")
-        st.write(" - Rear Luggage Compartment 🧳")
-        st.write(" - Catering Available for additional fee 🥘")
-        st.write(" - WiFi Available for additional fee 🛜")
-        st.markdown("<u>**24 Passenger Minibuses**</u>", unsafe_allow_html=True)
-        st.write("Ford E-450 Shuttle | Seats up to 24 | Local Trips")
-        st.write("[RENT A SHUTTLE FOR CONVENTION AND PARK TRANSIT]")
-        st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
-        st.write(" - TV including mandatory Safety Film 🎦")
-        st.write(" - UltraSafety Seatbelts 🪢")
-        st.write(" - CityLink Urban Reclining Seats 💺")
-        st.write(" - Rear Luggage Compartment 🧳")
-        st.write(" - 12V Outlets 🔌")
-        st.write(" - WiFi Available for additional fee 🛜")
-        st.markdown("<u>**40 Passenger Charter Bus**</u>", unsafe_allow_html=True)
-        st.write("MCI J3500 | Seasts up to 40 | Long-Distance Trips")
-        st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
-        st.write(" - Smart TV including mandatory Safety Film 🎦")
-        st.write(" - Personal Video with Satellite TV 🎦")
-        st.write(" - UltraPower Climate Model A/C and Heating ☁️")
-        st.write(" - UltraSafety+ Seatbelts 🪢")
-        st.write(" - USB and NEMA 5-15 Charger Plugs 🔌")
-        st.write(" - Cupholders 🥤")
-        st.write(" - 5G WiFi 🛜")
-        st.write(" - CityLink DeluxeHaul Reclining Seats 💺")
-        st.write(" - SunBlok Window Shades 🪟")
-        st.write(" - Underbay Luggage Storage 🧳")
-        st.write(" - Overhead Compartments 🛄")
-        st.write(" - Can be paired with DirecTV 📻")
-        st.write(" - ADA Accessible with rear ramp ♿")
-        st.write(" - Restroom 🚻")
-        st.write(" - Catering Available for additional fee 🥘")
-        st.write(" - 6G WiFi Available for additional fee 🛜")
-        st.markdown("<u>**Intercontinental™ Charter Bus**</u>", unsafe_allow_html=True)
-        st.write("MCI J4500 | Seats up to 60 | Cross-Continental Trips")
-        st.write("MCI J4500 Charge | Seats up to 56 | Cross-Continental Trips")
-        st.write("MCI D4000 | Seats up to 50 | Long-Distance Trips")
-        st.write("MCI D4500 | Seats up to 54 | Cross-Continental Trips")
-        st.write("MCI D4505 | Seats up to 55 | Cross-Continental Trips")
-        st.write("MCI D45 CRTe LE CHARGE | Seats up to 54 | Cross-Continental Trips")
-        st.write("VanHool T15 Acron | Seats up to 52 | Cross-Continental Trips")
-        st.write("VanHool T17 Acron | Seats up to 55 | Cross-Continental Trips")
-        st.write("VanHool T16 Astron | Seats up to 55 | Cross-Continental Trips")
-        st.write("VanHool TDX21 Altano | Seats up to 65 | Cross-Continental Trips")
-        st.write("VanHool TDX25 Astromega | Seats up to 90 | International Double-Decker Series")
-        st.write("VanHool TDX27 Astromega | Seats up to 91 | International Double-Decker Series")
-        st.write("VanHool CX45 | Seats up to 60 | Cross-Continental Trips")
-        st.write("VanHool T17 Astron | Seats up to 55 | Cross-Continental Trips")
-        st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
-        st.write(" - Smart TV including mandatory Safety Film 🎦")
-        st.write(" - Personal Video with Satellite TV 🎦")
-        st.write(" - UltraPower Deluxe Climate Control ☁️")
-        st.write(" - UltraSafety Deluxe Seatbelts 🪢")
-        st.write(" - USB and NEMA 5-15 Charger Plugs 🔌")
-        st.write(" - Cupholders 🥤")
-        st.write(" - 5G WiFi 🛜")
-        st.write(" - CityLink ATLANTA+ Luxury Model Reclining Seats 💺")
-        st.write(" - SunBlok+ Window Shades 🪟")
-        st.write(" - Underbay Luggage Storage 🧳")
-        st.write(" - Overhead Compartments 🛄")
-        st.write(" - Can be paired with DirecTV 📻")
-        st.write(" - ADA Accessible with rear ramp ♿")
-        st.write(" - Anti-carsick Light and Air System 🛡️")
-        st.write(" - Catering Available 🥘")
-        st.write(" - Comfort Tray available for J-Series Vehicles 🗔")
-        st.write(" - Restroom 🚻")
-        st.write(" - Onboard Chef Available for additional fee (VanHool Astromega ONLY) 👨‍🍳")
-        st.write(" - 6-7G WiFi Available for additional fee 🛜")
 
-    bus_selection = {
-        "School Bus Type A": 40,
-        "School Bus Type B": 40, 
-        "School Bus Type C": 50,
-        "School Bus Type D": 60,
-        "Ford Transit Van XL": 200,
-        "Ford Transit Van XLT": 210,
-        "Mercedes Sprinter Passenger Van": 250,
-        "Mercedes Sprinter Passenger Van Select": 300,
-        "Ford E-450": 250,
-        "MCI J3500": 400,
-        "MCI J4500": 450,
-        "MCI J4500 Charge [SILENT]": 750,
-        "MCI D4000": 500,
-        "MCI D4500": 600,
-        "MCI D4505": 650,
-        "MCI D45 CRTe LE Charge": 750,
-        "VanHool T15 Acron": 700,
-        "VanHool T17 Acron": 750,
-        "VanHool T16 Astron": 775,
-        "VanHool TDX21 Altano": 825,
-        "VanHool TDX25 Astromega [DOUBLE-DECKER]": 1000,
-        "VanHool TDX27 Astromega [DOUBLE-DECKER]": 1025,
-        "VanHool CX45": 775,
-        "VanHool T17 Astron": 750
-    }
-
-    with st.expander("Launch Centers"):
-        st.markdown("<u>Transit costs can be avoided by departing at a Launch Center</u>", unsafe_allow_html=True)
-        st.write("Atlanta, GA: Atlanta Civic Center Staton")
-        st.write("Savannah, GA: Savannah/Hilton Airport north of Gulfstream AC")
-        st.write("Jacksonville, FL: Skyway Hemming Plaza Station")
-        st.write("South Florida Station: Miami, FL Brownsville Metro Station")
-        st.write("Tampa/Orlando Lakeland Station: Lakeland Train Station")
-        st.write("Florida Panhandle Station: CityLink Center at Tallahassee International Airport")
-        st.write("Alabama Station: Mobile, AL Center at Bishop State Community College")
-        st.write("New Orleans Station: CityLink Center at City Park on Filmore Avenue")
-        st.write("Shreveport Station: CityLink Launch Center at Barksdale AFB")
-        st.write("Memphis Station: Mission Launch Center at B Gates in Memphis International Airport")
-        st.write("Saint Louis Center: CityLink Grand Central at Big Bend and Wydown")
-        st.write("Grand Central Station: CityLink Launch Center at NYC Pier 97")
-        st.write("New York City Center: CityLink Grand Center at Battery Park Whitehall Terminal")
-        st.write("Capital Center: Washington DC at Dupont Circle")
-
-    launchcenters = [
-        "Atlanta Civic Center",
-        "Savannah/Hilton Airport",
-        "Jacksonville Hemming Plaza",
-        "South Florida at Miami",
-        "Tampa/Orlando Lakeland",
-        "Florida Panhandle at Tallahassee",
-        "Alabama at Mobile",
-        "New Orleans at CityPark on Filmore Avenue",
-        "Shreveport",
-        "Memphis Airport",
-        "Saint Louis at Big Bend and Wydown",
-        "Grand Central NYC",
-        "City Center at Whitehall Terminal",
-        "Capital Center"
+    citylinkpages = [
+        "CityLink Bus Charter",
+        "CityLink Shuttles"
     ]
 
-    stationcenter = st.selectbox("Are you departing from a Launch Center?", ["Yes", "No"])
+    st.title("CityLink Transit")
+    st.sidebar.image("CityLink Logo.png", width=250)
+    citylinkpage = st.sidebar.selectbox("CityLink Services", citylinkpages)
+    
+    if citylinkpage == "CityLink Bus Charter":
 
-    if stationcenter == "Yes":
-        launchcenterselection = st.selectbox("Select Center", launchcenters)
-        st.write(f"Departing From: **{launchcenterselection}**")
+        st.subheader("CityLink Bus Charter")
 
-    if stationcenter == "No":
-        busdeparture = st.text_input("Departure Address")
-        st.write(f"Departing From: **{busdeparture}**")
+        with st.expander("Fleet"):
+            st.markdown("<u>**School Bus (STATEWIDE TRIPS ONLY)**</u>", unsafe_allow_html=True)
+            st.write("Type A | Seats up to 10 | Local Trips (SINGLE-DAY TRIPS ONLY)")
+            st.write("Type B | Seats up to 18 | Local and Regional Trips")
+            st.write("Type C | Seats up to 28 | Regional Trips")
+            st.write("Type D | Seats up to 40 | Regional Trips")
+            st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
+            st.write(" - USB Outlets 🔌")
+            st.write(" - Cupholders 🥤")
+            st.write(" - CityLink Comfort+ Seats 💺")
+            st.write(" - Window Shades 🪟")
+            st.write(" - UltraSafety Seatbelts 🪢")
+            st.write(" - Rear Luggage Compartment 🧳")
+            st.write(" - CityLink Premium A/C ☁️")
+            st.markdown("<u>**13 Passenger Vans**</u>", unsafe_allow_html=True)
+            st.write("Ford Transit Van XL | Seats up to 13 | Regional Trips")
+            st.write("Ford Transit Van XLT | Seats up to 13 | Regional Trips")
+            st.write("Mercedes Sprinter Passenger Van | Seats up to 15 (High Roof) | Regional-Long Distance Trips")
+            st.write("Mercedes Sprinter Passenger Van Select | Seats up to 15 (High Roof) | Long-Distance Trips")
+            st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
+            st.write(" - Smart TV including mandatory Safety Film 🎦")
+            st.write(" - VacuLux A/C and Heating ☁️")
+            st.write(" - UltraSafety+ Seatbelts 🪢")
+            st.write(" - USB and NEMA 5-15 Charger Plugs 🔌")
+            st.write(" - Cupholders 🥤")
+            st.write(" - CityLink DeluxeHaul Reclining Seats 💺")
+            st.write(" - SunBlok Window Shades 🪟")
+            st.write(" - Carryon Luggage Storage 🧳")
+            st.write(" - Rear Luggage Compartment 🧳")
+            st.write(" - Catering Available for additional fee 🥘")
+            st.write(" - WiFi Available for additional fee 🛜")
+            st.markdown("<u>**24 Passenger Minibuses**</u>", unsafe_allow_html=True)
+            st.write("Ford E-450 Shuttle | Seats up to 24 | Local Trips")
+            st.write("[RENT A SHUTTLE FOR CONVENTION AND PARK TRANSIT]")
+            st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
+            st.write(" - TV including mandatory Safety Film 🎦")
+            st.write(" - UltraSafety Seatbelts 🪢")
+            st.write(" - CityLink Urban Reclining Seats 💺")
+            st.write(" - Rear Luggage Compartment 🧳")
+            st.write(" - 12V Outlets 🔌")
+            st.write(" - WiFi Available for additional fee 🛜")
+            st.markdown("<u>**40 Passenger Charter Bus**</u>", unsafe_allow_html=True)
+            st.write("MCI J3500 | Seasts up to 40 | Long-Distance Trips")
+            st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
+            st.write(" - Smart TV including mandatory Safety Film 🎦")
+            st.write(" - Personal Video with Satellite TV 🎦")
+            st.write(" - UltraPower Climate Model A/C and Heating ☁️")
+            st.write(" - UltraSafety+ Seatbelts 🪢")
+            st.write(" - USB and NEMA 5-15 Charger Plugs 🔌")
+            st.write(" - Cupholders 🥤")
+            st.write(" - 5G WiFi 🛜")
+            st.write(" - CityLink DeluxeHaul Reclining Seats 💺")
+            st.write(" - SunBlok Window Shades 🪟")
+            st.write(" - Underbay Luggage Storage 🧳")
+            st.write(" - Overhead Compartments 🛄")
+            st.write(" - Can be paired with DirecTV 📻")
+            st.write(" - ADA Accessible with rear ramp ♿")
+            st.write(" - Restroom 🚻")
+            st.write(" - Catering Available for additional fee 🥘")
+            st.write(" - 6G WiFi Available for additional fee 🛜")
+            st.markdown("<u>**Intercontinental™ Charter Bus**</u>", unsafe_allow_html=True)
+            st.write("MCI J4500 | Seats up to 60 | Cross-Continental Trips")
+            st.write("MCI J4500 Charge | Seats up to 56 | Cross-Continental Trips")
+            st.write("MCI D4000 | Seats up to 50 | Long-Distance Trips")
+            st.write("MCI D4500 | Seats up to 54 | Cross-Continental Trips")
+            st.write("MCI D4505 | Seats up to 55 | Cross-Continental Trips")
+            st.write("MCI D45 CRTe LE CHARGE | Seats up to 54 | Cross-Continental Trips")
+            st.write("VanHool T15 Acron | Seats up to 52 | Cross-Continental Trips")
+            st.write("VanHool T17 Acron | Seats up to 55 | Cross-Continental Trips")
+            st.write("VanHool T16 Astron | Seats up to 55 | Cross-Continental Trips")
+            st.write("VanHool TDX21 Altano | Seats up to 65 | Cross-Continental Trips")
+            st.write("VanHool CX45 | Seats up to 60 | Cross-Continental Trips")
+            st.write("VanHool T17 Astron | Seats up to 55 | Cross-Continental Trips")
+            st.write("Volvo 9700 | Seats up to 56 | Cross-Continental Trips")
+            st.write("Prevost X3-45 Commuter | Seats up to 60 | Executive™ Regional Luxury Series")
+            st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
+            st.write(" - Smart TV including mandatory Safety Film 🎦")
+            st.write(" - Personal Video with Satellite TV 🎦")
+            st.write(" - UltraPower Deluxe Climate Control ☁️")
+            st.write(" - UltraSafety Deluxe Seatbelts 🪢")
+            st.write(" - USB and NEMA 5-15 Charger Plugs 🔌")
+            st.write(" - Cupholders 🥤")
+            st.write(" - 5G WiFi 🛜")
+            st.write(" - CityLink ATLANTA+™ Luxury Model Reclining Seats 💺")
+            st.write(" - SunBlok+ Window Shades 🪟")
+            st.write(" - Underbay Luggage Storage 🧳")
+            st.write(" - Overhead Compartments 🛄")
+            st.write(" - Can be paired with DirecTV 📻")
+            st.write(" - ADA Accessible with rear ramp ♿")
+            st.write(" - Anti-carsick Light and Air System 🛡️")
+            st.write(" - Catering Available 🥘")
+            st.write(" - Comfort Tray available for J-Series Vehicles 🗔")
+            st.write(" - Restroom 🚻")
+            st.write(" - 6-7G WiFi Available for additional fee 🛜")
+            st.markdown("<u>**CityLink Executive™ Ultra-Luxury Charter Bus**</u>", unsafe_allow_html=True)
+            st.write("VanHool TDX25 Astromega | Seats up to 90 | International Double-Decker Series")
+            st.write("VanHool TDX27 Astromega | Seats up to 91 | International Double-Decker Series")
+            st.write("Prevost H3-45 | Seats up to 54 | Executive™ Intercontinental Ultra-Luxury Series")
+            st.write("Prevost X3-45 | Seats up to 55 | Executive™ Intercontinental Ultra-Luxury Series")
+            st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
+            st.write(" - Smart TV including mandatory Safety Film 🎦")
+            st.write(" - Personal Video with Satellite TV 📺")
+            st.write(" - UltraPower Deluxe Climate Control ☁️")
+            st.write(" - UltraSafety Deluxe Seatbelts 🪢")
+            st.write(" - USB and NEMA 5-15 Charger Plugs 🔌")
+            st.write(" - Cupholders 🥤")
+            st.write(" - 5G WiFi 🛜")
+            st.write(" - CityLink Executive™ Ultra-Luxury Model Reclining Seats 💺")
+            st.write(" - SunBlok+ Window Shades 🪟")
+            st.write(" - Underbay Luggage Storage 🧳")
+            st.write(" - Overhead Compartments 🛄")
+            st.write(" - Can be paired with DirecTV 📻")
+            st.write(" - ADA Accessible with rear ramp ♿")
+            st.write(" - Anti-carsick Light and Air System 🛡️")
+            st.write(" - Catering Available 🥘")
+            st.write(" - VanHool Astromega provides Onboard Kitchen 🥘")
+            st.write(" - Comfort Tray available for J-Series Vehicles 🗔")
+            st.write(" - Restroom 🚻")
+            st.write(" - Onboard Chef Available for additional fee (VanHool Astromega ONLY) 👨‍🍳")
+            st.write(" - 6-7G WiFi Available for additional fee 🛜")
 
-    busarrival = st.text_input("Arrival Address")
-    st.write(f"Arriving At: **{busarrival}**")
+        bus_selection = {
+            "School Bus Type A": 40,
+            "School Bus Type B": 40, 
+            "School Bus Type C": 50,
+            "School Bus Type D": 60,
+            "Ford Transit Van XL": 200,
+            "Ford Transit Van XLT": 210,
+            "Mercedes Sprinter Passenger Van": 250,
+            "Mercedes Sprinter Passenger Van Select": 300,
+            "Ford E-450": 250,
+            "MCI J3500": 400,
+            "MCI J4500": 450,
+            "MCI J4500 Charge [SILENT]": 750,
+            "MCI D4000": 500,
+            "MCI D4500": 600,
+            "MCI D4505": 650,
+            "MCI D45 CRTe LE Charge": 750,
+            "VanHool T15 Acron": 700,
+            "VanHool T17 Acron": 750,
+            "VanHool T16 Astron": 775,
+            "VanHool TDX21 Altano": 825,
+            "VanHool TDX25 Astromega [DOUBLE-DECKER]": 1000,
+            "VanHool TDX27 Astromega [DOUBLE-DECKER]": 1025,
+            "VanHool CX45": 775,
+            "VanHool T17 Astron": 750,
+            "Prevost H3-45": 1000,
+            "Prevost X3-45": 1150,
+            "Prevost X3-45 Commuter": 825,
+            "Volvo 9700": 750
+        }
 
-    st.text_input("Full Name")
-    st.number_input("Age", min_value=18)
-    contact_ph = st.number_input("Contact Phone Number", min_value=000000000000)
-    contactemail = st.text_input("Contact Email")
+        with st.expander("Launch Centers"):
+            st.markdown("<u>Transit costs can be avoided by departing at a Launch Center</u>", unsafe_allow_html=True)
+            st.write("Atlanta, GA: Atlanta Civic Center Staton")
+            st.write("Savannah, GA: Savannah/Hilton Airport north of Gulfstream AC")
+            st.write("Jacksonville, FL: Skyway Hemming Plaza Station")
+            st.write("South Florida Station: Miami, FL Brownsville Metro Station")
+            st.write("Tampa/Orlando Lakeland Station: Lakeland Train Station")
+            st.write("Florida Panhandle Station: CityLink Center at Tallahassee International Airport")
+            st.write("Alabama Station: Mobile, AL Center at Bishop State Community College")
+            st.write("New Orleans Station: CityLink Center at City Park on Filmore Avenue")
+            st.write("Shreveport Station: CityLink Launch Center at Barksdale AFB")
+            st.write("Memphis Station: Mission Launch Center at B Gates in Memphis International Airport")
+            st.write("Saint Louis Center: CityLink Grand Central at Big Bend and Wydown")
+            st.write("Grand Central Station: CityLink Launch Center at NYC Pier 97")
+            st.write("New York City Center: CityLink Grand Center at Battery Park Whitehall Terminal")
+            st.write("Capital Center: Washington DC at Dupont Circle")
 
-    if st.number_input("Passengers Count", min_value=0):
-        st.success("Please accurately calculate the buses needed for the amount of passengers you have entered. We will contact you if the amount of buses you selected cannot host that number of passengers.")
+        launchcenters = [
+            "Atlanta Civic Center",
+            "Savannah/Hilton Airport",
+            "Jacksonville Hemming Plaza",
+            "South Florida at Miami",
+            "Tampa/Orlando Lakeland",
+            "Florida Panhandle at Tallahassee",
+            "Alabama at Mobile",
+            "New Orleans at CityPark on Filmore Avenue",
+            "Shreveport",
+            "Memphis Airport",
+            "Saint Louis at Big Bend and Wydown",
+            "Grand Central NYC",
+            "City Center at Whitehall Terminal",
+            "Capital Center"
+        ]
 
-    busleavedate = st.date_input("Day of Departure")
-    busleavetime = st.time_input("Time of Departure")
+        stationcenter = st.selectbox("Are you departing from a Launch Center?", ["Yes", "No"])
 
-    bustime = st.number_input("One-way Duration of ride (hrs)", min_value=0)
+        if stationcenter == "Yes":
+            launchcenterselection = st.selectbox("Select Center", launchcenters)
+            st.write(f"Departing From: **{launchcenterselection}**")
 
-    busreturndate = st.date_input("Day of Return")
-    busreturntime = st.date_input("Time of Return")
+        if stationcenter == "No":
+            busdeparture = st.text_input("Departure Address")
+            st.write(f"Departing From: **{busdeparture}**")
 
-    overnight = st.number_input("Nights staying at destination", min_value=0)
+        busarrival = st.text_input("Arrival Address")
+        st.write(f"Arriving At: **{busarrival}**")
 
-    busamenities = {
-        f"7G Wi-Fi | $100": 100,
-        f"Onboard Chef (VanHool Astromega ONLY) | $1000": 1200,
-        f"Onboard NetFlix Access | $15": 15,
-        f"Onboard Hulu Access | $15": 15,
-        f"Onboard Peacock Access | $15": 15,
-        f"Onboard Disney+ Access | $15": 15,
-    }
+        st.text_input("Full Name")
+        st.number_input("Age", min_value=18)
+        contact_ph = st.number_input("Contact Phone Number", min_value=000000000000)
+        contactemail = st.text_input("Contact Email")
 
-    # Amenities selection
-    bus_selected_amenities = st.multiselect("Select additional amenities", busamenities.keys())
+        if st.number_input("Passengers Count", min_value=0):
+            st.success("Please accurately calculate the buses needed for the amount of passengers you have entered. We will contact you if the amount of buses you selected cannot host that number of passengers.")
 
-    st.write("Please note that onboard Netflix, Hulu, Peacock, and Disney+ Access is only available for vehicles with a personal screen")
+        busleavedate = st.date_input("Day of Departure")
+        busleavetime = st.time_input("Time of Departure")
 
-    bus_amenity_cost = sum(busamenities[busamenity] for busamenity in bus_selected_amenities)
+        bustime = st.number_input("One-way Duration of ride (hrs)", min_value=0)
 
-    st.subheader("Estimated Quote")
+        busreturndate = st.date_input("Day of Return")
+        busreturntime = st.date_input("Time of Return")
 
-    bustype = st.selectbox("Select Bus", list(bus_selection.keys()))
+        overnight = st.number_input("Nights staying at destination", min_value=0)
 
-    buscount = st.number_input("Please enter the amount of required buses", min_value=0)
+        busamenities = {
+            f"7G Wi-Fi | $100": 100,
+            f"Onboard Chef (VanHool Astromega ONLY) | $1000": 1200,
+            f"Onboard NetFlix Access | $15": 15,
+            f"Onboard Hulu Access | $15": 15,
+            f"Onboard Peacock Access | $15": 15,
+            f"Onboard Disney+ Access | $15": 15,
+        }
 
-    buscost = bus_selection[bustype]
+        # Amenities selection
+        bus_selected_amenities = st.multiselect("Select additional amenities", busamenities.keys())
 
-    overnightprice = 150 * overnight
-    fuelcost = buscost * 0.2 * float(bustime) * 2
-    tripcost = buscost * 2 * float(bustime) + fuelcost
-    driverfee = 25 * float(bustime) * 2
-    totalbuscost = overnightprice + tripcost + driverfee + bus_amenity_cost
-    fullbuscost = totalbuscost * buscount
+        st.write("Please note that onboard Netflix, Hulu, Peacock, and Disney+ Access is only available for vehicles with a personal screen")
 
-    st.write(f"Trip Cost: **${tripcost:,.2f}**")
-    st.write(f"Overnight Stay Fee: **${overnightprice:,.2f}**")
-    st.write(f"Amenity Cost: **${bus_amenity_cost:,.2f}**")
-    st.write(f"Driver Fee: **${driverfee:,.2f}**")
-    st.write(f"Total Cost: **${fullbuscost:,.2f}**")
+        bus_amenity_cost = sum(busamenities[busamenity] for busamenity in bus_selected_amenities)
+
+        st.text_input("Additional Requests")
+
+        st.subheader("Estimated Quote")
+
+        bustype = st.selectbox("Select Bus", list(bus_selection.keys()))
+
+        buscount = st.number_input("Please enter the amount of required buses", min_value=0)
+
+        buscost = bus_selection[bustype]
+
+        overnightprice = 150 * overnight
+        fuelcost = buscost * 0.2 * float(bustime) * 2
+        tripcost = buscost * 2 * float(bustime) + fuelcost
+        driverfee = 25 * float(bustime) * 2
+        totalbuscost = overnightprice + tripcost + driverfee + bus_amenity_cost
+        fullbuscost = totalbuscost * buscount
+
+        st.write(f"Trip Cost: **${tripcost:,.2f}**")
+        st.write(f"Overnight Stay Fee: **${overnightprice:,.2f}**")
+        st.write(f"Amenity Cost: **${bus_amenity_cost:,.2f}**")
+        st.write(f"Driver Fee: **${driverfee:,.2f}**")
+        st.write(f"Total Cost: **${fullbuscost:,.2f}**")
+
+    if citylinkpage == "CityLink Shuttles":
+        st.title("CityLink Shuttle Manufacturer")
+
+        st.subheader("CityLink Executive™ Series")
+
+        st.subheader("CityLink Express+™ Series")
+
+        st.subheader("ATLANTA+™ Series")
+        st.write("Tri-Partnership with VanHool and MCI")
+
+        st.subheader("Comfort+™ Series")
+        st.write("Partnership with Delta Airlines")
 
 
 if pagechoice == "Karman Aircrafts":
@@ -453,6 +509,13 @@ if pagechoice == "HyperJets":
     st.write("On-demand Flight Attendants")
 
     st.subheader("Book a Flight")
+
+    with st.expander("Travel Centers"):
+        st.write("HEADQUARTERS: Orlando Executive Airport")
+        st.write("West Coast Business Center: Van Nuys Airport")
+        st.write("Gulfstream Center: Teterboro Airport")
+        st.write("Midwest Business Center: Chicago Midway International Airport")
+        st.write("MidwestHQ: Spirit of St. Louis Airport")
 
     privatehistory = [
         "Yes",
@@ -752,6 +815,9 @@ if pagechoice == "Palafin":
     st.markdown("<h4 style='font-size:20px;'>Palafin 2</h4>", unsafe_allow_html=True)
 
     st.subheader("Missions")
+
+if pagechoice == "RadarPro":
+    st.title("RadarPro")
 
 if pagechoice == "Careers":
     st.title("Careers")
