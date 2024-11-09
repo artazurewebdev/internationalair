@@ -460,6 +460,23 @@ if pagechoice == "Karman Aircrafts":
     st.write("Silent engines lower cabin noise down to 15-30 decibels")
     st.write("Best aircraft in the market")
 
+    with st.expander("History"):
+        st.write("June 2004 | Design proposed at NBAA Convention")
+        st.write("August 2006 | Karman Aircrafts Founded")
+        st.write("September 2007 | Design proposed at Karman Press Conference")
+        st.write("January 2008 | Design Accepted by Karman Aircrafts")
+        st.write("July 2009 | Planning Started")
+        st.write("December 2011 | Preorders Began")
+        st.write("March 2017 | Construction Began")
+        st.write("April 2023 | Test Flight A at Teterboro Airport")
+        st.write("June 2023 | Test Flight B at Van Nuys Airport")
+        st.write("November 2023 | Test Flight C at Chicago Midway")
+        st.write("January 2024 | Test Flight D at Spirit of St. Louis")
+        st.write("February 2024 | Test Flight E at Key West Int'l Airport")
+        st.write("November 2024 | Maiden Voyage at Seattle/Tacoma Int'l")
+        st.write("December 2024 | K100 First Flight with HyperJets")
+        st.write("January 2025 | First Flight on NetJets")
+
     st.subheader("K360")
     st.write("Karman K360 Aircraft")
     st.write("Advanced supersonic business jet designed for swift flight")
