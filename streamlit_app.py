@@ -124,13 +124,12 @@ if pagechoice == "CityLink":
         "CityLink Shuttles"
     ]
 
-    st.title("CityLink Transit")
     st.sidebar.image("CityLink Logo.png", width=250)
     citylinkpage = st.sidebar.selectbox("CityLink Services", citylinkpages)
     
     if citylinkpage == "CityLink Bus Charter":
 
-        st.subheader("CityLink Bus Charter")
+        st.title("CityLink Bus Charter")
 
         with st.expander("Fleet"):
             st.markdown("<u>**School Bus (STATEWIDE TRIPS ONLY)**</u>", unsafe_allow_html=True)
@@ -388,10 +387,50 @@ if pagechoice == "CityLink":
         st.write(f"Driver Fee: **${driverfee:,.2f}**")
         st.write(f"Total Cost: **${fullbuscost:,.2f}**")
 
-    if citylinkpage == "CityLink Shuttles":
-        st.title("CityLink Shuttle Manufacturer")
+    if citylinkpage == "CityLink Coaches":
+        st.title("CityLink Coaches")
 
         st.subheader("CityLink Executive™ Series")
+        st.markdown("<u>**CityLink Centauri A**</u>", unsafe_allow_html=True)
+        with st.expander("Statistics"):
+            st.write(" - Double-Floor Coach")
+            st.write(" - 15.6m in length")
+            st.write(" - 2.8m in width")
+            st.write(" - 4.3m in height")
+            st.write(" - 2700 Nm Max. torque")
+            st.write(" - 100 Passenger Capacity")
+            st.write(" - MX-13 Engine Type")
+            st.write(" - Up to 3000km Range per tank")
+            st.write(" - Up to 5m km lifespan")
+            st.write(" - Up to 100mph Speed")
+            st.write(" - Anti-hydroplane Wheels")
+
+        with st.expander("Amenities"):
+            st.write(" - Smart TV including mandatory Safety Film 🎦")
+            st.write(" - Personal Video with Satellite TV 📺")
+            st.write(" - UltraPower Deluxe Climate Control ☁️")
+            st.write(" - UltraSafety Deluxe Seatbelts 🪢")
+            st.write(" - USB and NEMA 5-15 Charger Plugs 🔌")
+            st.write(" - Cupholders 🥤")
+            st.write(" - 5G WiFi 🛜")
+            st.write(" - CityLink Executive™ Ultra-Luxury Model Reclining Seats 💺")
+            st.write(" - SunBlok+ Window Shades 🪟")
+            st.write(" - Underbay Luggage Storage 🧳")
+            st.write(" - Overhead Compartments 🛄")
+            st.write(" - Can be paired with DirecTV 📻")
+            st.write(" - ADA Accessible with rear ramp ♿")
+            st.write(" - Anti-carsick Light and Air System 🛡️")
+            st.write(" - Catering Available 🥘")
+            st.write(" - Onboard Kitchen 🥘")
+            st.write(" - Comfort Tray available 🗔")
+            st.write(" - Hazard Emergency HEPA Filter 🛡️")
+            st.write(" - Restroom 🚻")
+            st.write(" - Onboard Chef Available for additional fee 👨‍🍳")
+            st.write(" - 6-7G WiFi Available for additional fee 🛜")
+            st.markdown("<u>Optional Features</u>", unsafe_allow_html=True)
+            st.write(" - Onboard Shower (94pax Capacity)")
+            st.write(" - Executive Shuttle (18pax Capacity)")
+            st.write(" - Jupiter Luxury Seats (80pax Capacity)")
 
         st.subheader("CityLink Express+™ Series")
 
@@ -400,6 +439,8 @@ if pagechoice == "CityLink":
 
         st.subheader("Comfort+™ Series")
         st.write("Partnership with Delta Airlines")
+
+        st.subheader("Jupiter Series")
 
 
 if pagechoice == "Karman Aircrafts":
