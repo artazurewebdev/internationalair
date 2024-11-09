@@ -391,7 +391,7 @@ if pagechoice == "CityLink":
         st.title("CityLink Coaches")
 
         st.subheader("CityLink Executive™ Series")
-        st.markdown("<u>**CityLink Centauri A**</u>", unsafe_allow_html=True)
+        st.markdown("<h4 style='font-size:20px;'>CityLink Centauri A</h4>", unsafe_allow_html=True)
         with st.expander("Statistics"):
             st.write(" - Double-Floor Coach")
             st.write(" - 15.6m in length")
