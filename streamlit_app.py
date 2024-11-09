@@ -121,7 +121,7 @@ if pagechoice == "CityLink":
 
     citylinkpages = [
         "CityLink Bus Charter",
-        "CityLink Shuttles"
+        "CityLink Coaches"
     ]
 
     st.sidebar.image("CityLink Logo.png", width=250)
