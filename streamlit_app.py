@@ -226,10 +226,11 @@ if pagechoice == "CityLink":
             st.write(" - Restroom 🚻")
             st.write(" - 6-7G WiFi Available for additional fee 🛜")
             st.markdown("<u>**CityLink Executive™ Ultra-Luxury Charter Bus**</u>", unsafe_allow_html=True)
-            st.write("VanHool TDX25 Astromega | Seats up to 90 | International Double-Decker Series")
-            st.write("VanHool TDX27 Astromega | Seats up to 91 | International Double-Decker Series")
+            st.write("VanHool TDX25 Astromega | Seats up to 90 | International Double-Decker Series ⭐")
+            st.write("VanHool TDX27 Astromega | Seats up to 91 | International Double-Decker Series ⭐")
             st.write("Prevost H3-45 | Seats up to 54 | Executive™ Intercontinental Ultra-Luxury Series")
             st.write("Prevost X3-45 | Seats up to 55 | Executive™ Intercontinental Ultra-Luxury Series")
+            st.write("CityLink Centauri A | Seats up to 100 | CityLink Executive™ Double-Decker Series ⭐")
             st.markdown("<u>Amenities</u>", unsafe_allow_html=True)
             st.write(" - Smart TV including mandatory Safety Film 🎦")
             st.write(" - Personal Video with Satellite TV 📺")
@@ -246,10 +247,10 @@ if pagechoice == "CityLink":
             st.write(" - ADA Accessible with rear ramp ♿")
             st.write(" - Anti-carsick Light and Air System 🛡️")
             st.write(" - Catering Available 🥘")
-            st.write(" - VanHool Astromega provides Onboard Kitchen 🥘")
-            st.write(" - Comfort Tray available for J-Series Vehicles 🗔")
+            st.write(" - Star Vehicles provide Onboard Kitchen 🥘")
+            st.write(" - Comfort Tray available 🗔")
             st.write(" - Restroom 🚻")
-            st.write(" - Onboard Chef Available for additional fee (VanHool Astromega ONLY) 👨‍🍳")
+            st.write(" - Onboard Chef Available for additional fee (Star Vehicles ONLY) 👨‍🍳")
             st.write(" - 6-7G WiFi Available for additional fee 🛜")
 
         bus_selection = {
@@ -350,7 +351,7 @@ if pagechoice == "CityLink":
 
         busamenities = {
             f"7G Wi-Fi | $100": 100,
-            f"Onboard Chef (VanHool Astromega ONLY) | $1000": 1200,
+            f"Onboard Chef (VanHool Astromega and CityLink Centauri ONLY) | $1000": 1200,
             f"Onboard NetFlix Access | $15": 15,
             f"Onboard Hulu Access | $15": 15,
             f"Onboard Peacock Access | $15": 15,
