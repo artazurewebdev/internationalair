@@ -396,7 +396,7 @@ if pagechoice == "CityLink":
         with st.expander("Statistics"):
             st.write(" - Double-Floor Coach")
             st.write(" - 15.6m in length")
-            st.write(" - 2.8m in width")
+            st.write(" - 2.9m in width")
             st.write(" - 4.3m in height")
             st.write(" - 2700 Nm Max. torque")
             st.write(" - 100 Passenger Capacity")
@@ -434,6 +434,40 @@ if pagechoice == "CityLink":
             st.write(" - Jupiter Luxury Seats (80pax Capacity)")
 
         st.subheader("CityLink Express+™ Series")
+        st.markdown("<h4 style='font-size:20px;'>CityLink Express One</h4>", unsafe_allow_html=True)
+        with st.expander("Statistics"):
+            st.write(" - Single-floor Coach")
+            st.write(" - 13.84m in Length")
+            st.write(" - 2.4m in width")
+            st.write(" - 3.5m in height")
+            st.write(" - 2200 Nm Max. Torque")
+            st.write(" - 48 Passenger Capacity")
+            st.write(" - MX-11 Engine Type")
+            st.write(" - Up to 3500km Range per Tank")
+            st.write(" - Up to 7.5m km lifespan")
+            st.write(" - Up to 115mph Speed")
+            st.write(" - Anti-hydroplane Wheels")
+
+        with st.expander("Amenities"):
+            st.write(" - Smart TV including mandatory Safety Film 🎦")
+            st.write(" - Personal Video with Satellite TV 📺")
+            st.write(" - UltraPower Deluxe Climate Control ☁️")
+            st.write(" - UltraSafety Deluxe Seatbelts 🪢")
+            st.write(" - USB and NEMA 5-15 Charger Plugs 🔌")
+            st.write(" - Cupholders 🥤")
+            st.write(" - 5G WiFi 🛜")
+            st.write(" - CityLink Express+™ Luxury Model Reclining Seats 💺")
+            st.write(" - SunBlok+ Window Shades 🪟")
+            st.write(" - Underbay Luggage Storage 🧳")
+            st.write(" - Overhead Compartments 🛄")
+            st.write(" - Can be paired with DirecTV 📻")
+            st.write(" - ADA Accessible with rear ramp ♿")
+            st.write(" - Anti-carsick Light and Air System 🛡️")
+            st.write(" - Catering Available 🥘")
+            st.write(" - Comfort Tray available 🗔")
+            st.write(" - Hazard Emergency HEPA Filter 🛡️")
+            st.write(" - Restroom 🚻")
+            st.write(" - 6-7G WiFi Available for additional fee 🛜")
 
         st.subheader("ATLANTA+™ Series")
         st.write("Tri-Partnership with VanHool and MCI")
@@ -442,6 +476,8 @@ if pagechoice == "CityLink":
         st.write("Partnership with Delta Airlines")
 
         st.subheader("Jupiter Series")
+
+        st.subheader("EDUCoach Series")
 
 
 if pagechoice == "Karman Aircrafts":
