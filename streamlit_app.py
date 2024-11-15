@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+from geopy.geocoders import Nominatim
 from datetime import datetime
 import time
 
@@ -300,6 +302,11 @@ if pagechoice == "CityLink":
             st.write("Grand Central Station: CityLink Launch Center at NYC Pier 97")
             st.write("New York City Center: CityLink Grand Center at Battery Park Whitehall Terminal")
             st.write("Capital Center: Washington DC at Dupont Circle")
+            st.write("LA Center: Launch Center at Van Nuys Airport")
+            st.write("San Francisco Station: CityLink Center at India Basin Shoreline")
+            st.write("Seattle Sky Station: CityLink Sky Center at SEA-TAC")
+            st.write("Portland Launch: Irvington at NE 15th and NE Brazee")
+            st.write("Vancouver Launch: Canada Place")
 
         launchcenters = [
             "Atlanta Civic Center",
