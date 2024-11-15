@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from geopy.geocoders import Nominatim
 from datetime import datetime
 import time
 
