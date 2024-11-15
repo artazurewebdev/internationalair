@@ -282,7 +282,9 @@ if pagechoice == "CityLink":
             "Prevost H3-45": 1000,
             "Prevost X3-45": 1150,
             "Prevost X3-45 Commuter": 825,
-            "Volvo 9700": 750
+            "Volvo 9700": 750,
+            "CityLink Centauri A": 1500,
+            "CityLink Centauri A Executive Bus": 2300
         }
 
         with st.expander("Launch Centers"):
@@ -306,6 +308,7 @@ if pagechoice == "CityLink":
             st.write("Seattle Sky Station: CityLink Sky Center at SEA-TAC")
             st.write("Portland Launch: Irvington at NE 15th and NE Brazee")
             st.write("Vancouver Launch: Canada Place")
+            st.write("StarPort: CityLink Jekyll Island Convention Center")
 
         launchcenters = [
             "Atlanta Civic Center",
@@ -321,8 +324,14 @@ if pagechoice == "CityLink":
             "Saint Louis at Big Bend and Wydown",
             "Grand Central NYC",
             "City Center at Whitehall Terminal",
-            "Capital Center"
-        ]
+            "Capital Center",
+            "LA Center at Van Nuys",
+            "San Francisco Station",
+            "Seattle Sky Station",
+            "Portland Launch Center",
+            "Vancouver Launch Center"
+            "StarPort at Jekyll Island"
+            ]
 
         stationcenter = st.selectbox("Are you departing from a Launch Center?", ["Yes", "No"])
 
