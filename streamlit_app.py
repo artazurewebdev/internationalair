@@ -904,15 +904,13 @@ if pagechoice == "HyperJets":
         if other_bank_input:
             bank = [opt for opt in bank if opt != "Other"] + [other_bank_input]
 
-    st.success(f"Bank for wire transfer: **${bank:,.2f}**")
-
     cvv = st.number_input("Credit Card CVV", min_value=100)
 
     address = st.text_input("Input Address registered with Bank Account")
 
     # Purchase button
     if st.button(f"Complete Purchase for: **${total_cost:,.2f}**"):
-        st.success(f"**${total_cost:,.2f}**" " Charged to credit card: " f"**{creditcard}**")
+        st.success(f"**${total_cost:,.2f}**" " Charged to your account at: " f"**{bank}**")
         st.write("Your charter request has been submitted! We will contact you shortly using " f"**{contactemail}**")
         st.warning("If your flight is international, we will contact you shortly requesting customs and visa verification")
 
