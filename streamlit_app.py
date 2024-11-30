@@ -897,7 +897,7 @@ if pagechoice == "HyperJets":
         "Other"
     ]
 
-    bank = st.text_input("Bank for Purchase", participatingbanks)
+    bank = st.multiselect("Bank for Purchase", participatingbanks)
 
     if "Other" in bank:
         other_bank_input = st.text_input("Please specify Bank for Purchase")
