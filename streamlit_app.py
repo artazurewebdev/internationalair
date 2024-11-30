@@ -867,7 +867,7 @@ if pagechoice == "HyperJets":
     st.success("Fastest Option")
     st.write(f"Amount to charge: **${total_cost:,.2f}**")
 
-    participatingbanks = [
+    participatingbanks = {
         "HyperJets One Travel Center",
         "HyperJets Executive Bank",
         "HyperJets Travel Member"
@@ -895,7 +895,7 @@ if pagechoice == "HyperJets":
         "HSBC Bank USA",
         "BMO USA",
         "Other"
-    ]
+    }
 
     bank = st.multiselect("Bank for Purchase", participatingbanks)
 
