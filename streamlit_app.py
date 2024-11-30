@@ -863,15 +863,52 @@ if pagechoice == "HyperJets":
 
     st.text_input("Input contact email")
 
-    st.subheader("Purchase with Credit Card")
+    st.subheader("Wire Transfer Purchase")
     st.success("Fastest Option")
     st.write(f"Amount to charge: **${total_cost:,.2f}**")
 
-    creditcard = st.number_input("Credit Card Number", min_value=100000000000000)
+    participatingbanks = [
+        "HyperJets One Travel Center",
+        "HyperJets Executive Bank",
+        "HyperJets Travel Member"
+        "Bank of America",
+        "Commerce Bank",
+        "Ally Bank",
+        "Capital One 360",
+        "AppleCash",
+        "Varo Bank",
+        "Discover Bank",
+        "Quontic Bank",
+        "Axos Bank",
+        "JP Morgan Chase",
+        "Citigroup Bank",
+        "Wells Fargo",
+        "Goldman Sachs",
+        "Morgan Stanley",
+        "US Bancorp",
+        "PNC Financial",
+        "Truist Financial",
+        "Charles Schwab",
+        "BNY Mellon",
+        "State Street Corporation",
+        "American Express",
+        "HSBC Bank USA",
+        "BMO USA",
+        "Other"
+    ]
+
+    bank = st.text_input("Bank for Purchase", participatingbanks)
+
+    if "Other" in bank:
+        other_bank_input = st.text_input("Please specify Bank for Purchase")
+        if other_bank_input:
+            bank = [opt for opt in bank if opt != "Other"] + [other_bank_input]
+
+    st.success("Bank for wire transfer: ", bank)
 
     cvv = st.number_input("Credit Card CVV", min_value=100)
 
-    address = st.text_input("Input Address registered with Credit Card")
+    address = st.text_input("Input Address registered with Bank Account")
 
     # Purchase button
     if st.button(f"Complete Purchase for: **${total_cost:,.2f}**"):
@@ -887,8 +924,8 @@ if pagechoice == "HyperJets":
         st.write("Requesting a quote allows you to make edits and also makes more space for customization. This also allows other forms of payment such as cash, and check. Mail-in payments are only allowed for flights booked at least 14 days in advance.")
 
     paymentoptions = [
-        "Pay with credit card option above.",
-        "Mail-in credit card information (Must book at least 14 days in advance)",
+        "Pay with wire transfer option above.",
+        "Mail-in wire transfer information (Must book at least 14 days in advance)",
         "Mail-in cash (Must book at least 14 days in advance, no coins allowed)",
         "Mail-in check written to HyperJets LLC (Must book at least 14 days in advance)"
     ]
