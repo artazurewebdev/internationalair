@@ -904,7 +904,7 @@ if pagechoice == "HyperJets":
         if other_bank_input:
             bank = [opt for opt in bank if opt != "Other"] + [other_bank_input]
 
-    st.success("Bank for wire transfer: ", bank)
+    st.success(f"Bank for wire transfer: **${bank:,.2f}**")
 
     cvv = st.number_input("Credit Card CVV", min_value=100)
 
