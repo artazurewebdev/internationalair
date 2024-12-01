@@ -867,10 +867,10 @@ if pagechoice == "HyperJets":
     st.success("Fastest Option")
     st.write(f"Amount to charge: **${total_cost:,.2f}**")
 
-    participatingbanks = {
+    participatingbanks = [
         "HyperJets One Travel Center",
         "HyperJets Executive Bank",
-        "HyperJets Travel Member"
+        "HyperJets Travel Member",
         "Bank of America",
         "Commerce Bank",
         "Ally Bank",
@@ -895,16 +895,16 @@ if pagechoice == "HyperJets":
         "HSBC Bank USA",
         "BMO USA",
         "Other"
-    }
+    ]
 
-    bank = st.multiselect("Bank for Purchase", participatingbanks)
+    bank = st.selectbox("Bank for Purchase", participatingbanks)
 
     if "Other" in bank:
         other_bank_input = st.text_input("Please specify Bank for Purchase")
         if other_bank_input:
             bank = [opt for opt in bank if opt != "Other"] + [other_bank_input]
 
-    cvv = st.number_input("Credit Card CVV", min_value=100)
+    bankname = st.text_input("Name Associated with Bank Account")
 
     address = st.text_input("Input Address registered with Bank Account")
 
