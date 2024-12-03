@@ -329,8 +329,15 @@ if pagechoice == "CityLink":
             "San Francisco Station",
             "Seattle Sky Station",
             "Portland Launch Center",
-            "Vancouver Launch Center"
-            "StarPort at Jekyll Island"
+            "Vancouver Launch Center",
+            "StarPort at Jekyll Island",
+            "Vegas Sky Station at MGM Grand",
+            "Samsung Station at JW Marriott Nashville",
+            "Louisville Sky Station at Kentucky Int'l Convention Center",
+            "Chicago Launch Center at McCormick Place",
+            "Philadelphia Station at Penn's Landing",
+            "OKC/Moore Tornado Station at 8100 S Bryant Avenue",
+            "Denver Convergence Station at Meow Wolf"
             ]
 
         stationcenter = st.selectbox("Are you departing from a Launch Center?", ["Yes", "No"])
@@ -600,8 +607,9 @@ if pagechoice == "HyperJets":
         "Boeing 797 BBJ": 27500,
         "Bombardier CRJ1000": 21000,
         "Karman HyperJets Supersonic K360 Global": 12000,
-        "Boeing 777 BBJ, HyperJets Emerald Aircraft": 30000,
-        "Boeing 747-8i BBJ, HyperJets Diamond Aircraft": 40000,
+        "Boeing 777 BBJ": 30000,
+        "Boeing 747-8i BBJ": 40000,
+        "Boeing 787 BBJ": 34000,
         "Scaled Composites VSS Unity Hypersonic Jet": 500000
     }
 
