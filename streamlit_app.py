@@ -8,7 +8,7 @@ st.set_page_config(page_title="HyperJets", page_icon="🤖", layout="centered", 
 st.sidebar.title("InternationalAir")
 st.sidebar.subheader("The best way to travel")
 
-pageselect = ["Home", "HyperJets", "InternationalAir", "CityLink", "Karman Aircrafts", "Palafin", "Careers"]
+pageselect = ["Home", "HyperJets", "InternationalAir", "CityLink", "Karman Aircrafts", "Palafin", "RadarPro", "Careers"]
 pagechoice = st.sidebar.selectbox("Select Page", pageselect)
 
 if pagechoice == "Home":
@@ -971,7 +971,96 @@ if pagechoice == "Palafin":
     st.subheader("Missions")
 
 if pagechoice == "RadarPro":
-    st.title("RadarPro")
+
+    radarpropages = [
+        "RadarPro Software",
+        "LNR Type Radar",
+        "LRR Type Radar",
+        "STR Type Radar",
+        "TRS Type Radar",
+        "PHA Type Radar",
+        "Palafin RadarPro Satellite",
+        "RadarPro TIV"
+    ]
+
+    radarprochoice = st.sidebar.selectbox("Select a Page", radarpropages)
+
+    if radarprochoice == "RadarPro Software":
+        st.title("RadarPro Software")
+        st.subheader("The most powerful radar ever")
+
+        st.write("There are hundreds of RadarPro Weather Radars around the world")
+        st.write("RadarPro provides global coverage across almost all land masses internationally.")
+
+    if radarprochoice == "LNR Type Radar":
+        st.title("Long Range Radars")
+
+        st.write("Range: Up to 400 nautical miles with high quality")
+        st.write("Range: Collects data for up to 600 nautical miles")
+
+    if radarprochoice == "LRR Type Radar":
+        st.title("Long Range Regional Radars")
+
+        st.write("Range: Up to 250 nautical miles with high quality")
+        st.write("Range: Collects data for up to 350 nautical miles")
+        st.success("Highest quality regional radar on the market")
+
+    if radarprochoice == "STR Type Radar":
+        st.title("Short Range Radars")
+
+        st.write("Range: Up to 150 nautical miles with extremely high quality")
+        st.write("Range: Collects data for up to 250 nautical miles")
+
+    if radarprochoice == "TRS Type Radar":
+        st.title("Terminal Radar Site Radars")
+
+        st.write("Range: Up to 80 nautical miles of detailed aviation weather data")
+
+    if radarprochoice == "PHA Type Radar":
+        st.title("Phased Array Radars")
+
+        st.write("Flat Panel Antenna")
+
+    if radarprochoice == "Palafin RadarPro Satellite":
+        st.title("Space Imagery Satellites")
+
+    if radarprochoice == "RadarPro TIV":
+        st.title("RadarPro Tornado Intercept Vehicles")
+
+        with st.expander("Tornado Wrangler 1 (TWG-1)"):
+            st.write("Designed to handle strong EF-3 Tornadoes")
+            st.write("180-200mph wind resistance")
+            st.write("Titanium and steel barrier shell with bulletproof glass")
+            st.write("130mph maximum speed")
+            st.write("6 second deployment speed")
+            st.write(" - Claws can grip onto concrete and slick mud")
+            st.write(" - Airbags lower vehicle barriers to the ground")
+            st.write(" - Hyper-Aerodynamic design")
+            st.write(" - Spikes pierce through the ground quickly")
+            st.write("60mpg on average travel")
+            st.write("Gasoline-Electric Hybrid (70gal fuel capacity)")
+            st.write("6 passenger capacity")
+            st.write("4 probe capacity")
+            st.write("13k lbs weight")
+
+        with st.expander("Pinnacle Doppler on Wheels (DOW-P1)"):
+            st.write("Designed for accurate tornadic measurement")
+            st.write("110-140mph wind resistance")
+            st.write("Galvanized steel barrier shell with bulletproof glass")
+            st.write("140mph maximum speed")
+            st.write("90 second deployment speed")
+            st.write(" - Can withstand EF-1 tornado winds")
+            st.write("STR Type Radar mounted onto vehicle")
+            st.write("Highest qualiy radar on any DOW")
+            st.write("50mpg on average travel")
+            st.write("Diesel Fuel")
+            st.write("4 passenger capacity")
+            st.write("2 probe capacity")
+            st.write("30k lbs weight")
+
+        with st.expander("AERO Model TIV (AMT-1)"):
+            st.write("COMING SOON")
+            st.write("Will be able to withstand EF-5+ winds")
 
 if pagechoice == "Careers":
     st.title("Careers")
