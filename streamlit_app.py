@@ -606,12 +606,16 @@ if pagechoice == "HyperJets":
         "Boeing 737-900 BBJ":24500,
         "Boeing 737-MAX 10 BBJ": 25000, 
         "Boeing 797 BBJ": 27500,
+        "Airbus ACJ TwoTwenty": 26000,
+        "Airbus ACJneo": 24000,
+        "Airbus ACJ 330neo": 29000,
+        "Airbus ACJ350": 28000,
         "Bombardier CRJ1000": 21000,
         "Karman HyperJets Supersonic K360 Global": 12000,
-        "Boeing 777 BBJ": 30000,
+        "Boeing 777X BBJ": 30000,
         "Boeing 747-8i BBJ": 40000,
         "Boeing 787 BBJ": 34000,
-        "Scaled Composites VSS Unity Hypersonic Jet": 500000
+        "Airbus A380 Corporate Jet": 45000
     }
 
     destinations = [
@@ -622,10 +626,11 @@ if pagechoice == "HyperJets":
     st.text("Presented by InternationalAir")
 
     st.subheader("Flight Amenities")
-    st.write("Lightning-fast WiFi")
+    st.write("Lightning-fast 6G WiFi")
     st.write("1 Meal per 4 hours of flight time. At least 1 meal will be provided per flight")
     st.write("Complimentary Transit up to 50 miles from airport")
     st.write("On-demand Flight Attendants")
+    st.write("Onboard Netflix, Disney+, Hulu, Peacock, Amazon Prime Video, Paramount+, and Apple TV+")
 
     st.subheader("Book a Flight")
 
@@ -701,11 +706,10 @@ if pagechoice == "HyperJets":
         f"7G Wi-Fi | $100": 100,
         f"In-flight Chef | $1200": 1200,
         f"Pet Luxury Set for Cats | $800": 800,
-        f"Pet Luxury Set for Dogs | $800": 800,
-        f"Onboard NetFlix Access | $15": 15,
-        f"Onboard Hulu Access | $15": 15,
-        f"Onboard Peacock Access | $15": 15,
-        f"Onboard Disney+ Access | $15": 15,
+        f"Pet Luxury Set for Dogs | $800": 800
+    }
+
+    merchandise = {
         f"Custom HyperJets iPhone 16 | $1500": 1500,
         f"Custom HyperJets Matte Sticker Set | $5": 5
     }
