@@ -607,6 +607,7 @@ if pagechoice == "HyperJets":
         "Boeing 737-MAX 10 BBJ": 25000, 
         "Boeing 797 BBJ": 27500,
         "Airbus ACJ TwoTwenty": 26000,
+        "Airbus ACJ TwoTwenty Cyril Kongo Special Cabin Edition": 27000,
         "Airbus ACJneo": 24000,
         "Airbus ACJ 330neo": 29000,
         "Airbus ACJ350": 28000,
