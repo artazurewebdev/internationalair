@@ -614,9 +614,10 @@ if pagechoice == "HyperJets":
         "Bombardier CRJ1000": 21000,
         "Karman HyperJets Supersonic K360 Global": 12000,
         "Boeing 777X BBJ": 30000,
+        "Boeing 747-100 BBJ 360° Glass Second Floor": 36000,
         "Boeing 747-8i BBJ": 40000,
         "Boeing 787 BBJ": 34000,
-        "Airbus A380 Corporate Jet": 45000
+        "Airbus A380-900 Corporate Jet": 45000
     }
 
     destinations = [
