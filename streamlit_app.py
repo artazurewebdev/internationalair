@@ -1065,8 +1065,26 @@ if pagechoice == "RadarPro":
             st.write("30k lbs weight")
 
         with st.expander("AERO Model TIV (AMT-1)"):
-            st.write("COMING SOON")
-            st.write("Will be able to withstand EF-5+ winds")
+            st.write("Designed to withstand EF-5+ winds")
+            st.write("350-370mph wind resistance")
+            st.write("Tungsten and galvanized moissanite shell")
+            st.write("Bulletproof windows designed for large debris")
+            st.write("120mph maximum speed")
+            st.write("6 second deployment speed")
+            st.write(" - Horizontal claws grip onto any material")
+            st.write(" - Airbags lower vehicle flush to the ground")
+            st.write(" - Advanced Hyper-aerodynamic design")
+            st.write(" - Spikes and augers securely fasten vehicle to the ground")
+            st.write("60mpg on average travel")
+            st.write("Gasoline-Electric Hybrid (75gal fuel capacity)")
+            st.write("1 driver, 4 passengers, 1 Turret Seat")
+            st.write("4 probe capacity")
+            st.write("16k lbs weight")
+            st.write("Advanced mesonet up to 400mph")
+            st.write("INFLOW™ Rocket Launch System")
+            st.write("RadarPro INFLOW™ Rockets")
+            st.write("Deployable Rocket Mesonet")
+            st.write("IMAX Turret Hatch Viewing System")
 
 if pagechoice == "Careers":
     st.title("Careers")
