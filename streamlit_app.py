@@ -5,8 +5,6 @@ import time
 
 st.set_page_config(page_title="HyperJets", page_icon="🤖", layout="centered", initial_sidebar_state="auto")
 
-st.set_page_config(page_title="Custom Background", layout="wide")
-
 page_bg_css = """
 <style>
 [data-testid="stAppViewContainer"] {
