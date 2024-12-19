@@ -10,7 +10,7 @@ st.set_page_config(page_title="Custom Background", layout="wide")
 page_bg_css = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-color: #OE1117;
+    background-color: #0E1117;
 }
 
 [data-testid="stSidebar"] {
