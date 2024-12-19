@@ -5,6 +5,22 @@ import time
 
 st.set_page_config(page_title="HyperJets", page_icon="🤖", layout="centered", initial_sidebar_state="auto")
 
+st.set_page_config(page_title="Custom Background", layout="wide")
+
+page_bg_css = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background-color: #OE1117;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #262730;
+}
+</style>
+"""
+
+st.markdown(page_bg_css, unsafe_allow_html=True)
+
 st.sidebar.title("InternationalAir")
 st.sidebar.subheader("The best way to travel")
 
@@ -620,6 +636,7 @@ if pagechoice == "HyperJets":
         "Boeing 747-400 BBJ 360° Glass Second Floor": 38000,
         "Boeing 747-8i BBJ": 40000,
         'Boeing 747-81 "iJet" Modified by Apple': 52000,
+        "Apple iJet DualFLR Executive Jet": 50000,
         "Modified Boeing 747 Executive Dreamlifter": 42000,
         "Boeing 787 BBJ": 34000,
         "Airbus A380-900 Corporate Jet": 45000
