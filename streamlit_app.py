@@ -605,6 +605,7 @@ if pagechoice == "HyperJets":
         "Airbus ACJ319NEO Corporate Jet": 8000,
         "Boeing 737-900 BBJ":24500,
         "Boeing 737-MAX 10 BBJ": 25000, 
+        "Boeing 737-MAX 10 Glass-Roof BBJ": 27500,
         "Boeing 797 BBJ": 27500,
         "Airbus ACJ TwoTwenty": 26000,
         "Airbus ACJ TwoTwenty Cyril Kongo Special Cabin Edition": 27000,
@@ -614,8 +615,12 @@ if pagechoice == "HyperJets":
         "Bombardier CRJ1000": 21000,
         "Karman HyperJets Supersonic K360 Global": 12000,
         "Boeing 777X BBJ": 30000,
+        "Boeing Smart747SP Modified by Samsung": 41000,
         "Boeing 747-100 BBJ 360° Glass Second Floor": 36000,
+        "Boeing 747-400 BBJ 360° Glass Second Floor": 38000,
         "Boeing 747-8i BBJ": 40000,
+        'Boeing 747-81 "iJet" Modified by Apple': 52000,
+        "Modified Boeing 747 Executive Dreamlifter": 42000,
         "Boeing 787 BBJ": 34000,
         "Airbus A380-900 Corporate Jet": 45000
     }
@@ -1064,7 +1069,7 @@ if pagechoice == "RadarPro":
             st.write("2 probe capacity")
             st.write("30k lbs weight")
 
-        with st.expander("AERO Model TIV (AMT-1)"):
+        with st.expander("AERO™ Model TIV (AMT-1)"):
             st.write("Designed to withstand EF-5+ winds")
             st.write("350-370mph wind resistance")
             st.write("Tungsten and galvanized moissanite shell")
