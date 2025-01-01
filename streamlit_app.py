@@ -17,37 +17,20 @@ page_bg_css = """
 </style>
 """
 
-custom_text_css = """
+global_text_css = """
 <style>
-/* Change default text color for the app */
-[data-testid="stAppViewContainer"] {
-    color:rgb(255, 255, 255); 
-}
-
-/* Change sidebar text color */
-[data-testid="stSidebar"] .css-1d391kg {
-    color:rgb(255, 255, 255); 
-}
-
-/* Style specific headers */
-h1 {
-    color:rgb(255, 255, 255); 
-}
-
-h2 {
-    color:rgb(255, 255, 255);
-}
-
-/* Style specific links */
-a {
-    color:rgb(255, 255, 255);
+/* Apply global styling to all text */
+[data-testid="stAppViewContainer"] * {
+    color: #2E8B57; /* Sea Green */
+    font-family: "Arial", sans-serif; /* Font family */
+    font-size: 18px; /* Text size */
 }
 </style>
 """
 
 st.markdown(page_bg_css, unsafe_allow_html=True)
 
-st.markdown(custom_text_css, unsafe_allow_html=True)
+st.markdown(global_text_css, unsafe_allow_html=True)
 
 st.sidebar.title("InternationalAir")
 st.sidebar.subheader("The best way to travel")
