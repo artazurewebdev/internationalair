@@ -17,7 +17,37 @@ page_bg_css = """
 </style>
 """
 
+custom_text_css = """
+<style>
+/* Change default text color for the app */
+[data-testid="stAppViewContainer"] {
+    color:rgb(255, 255, 255); 
+}
+
+/* Change sidebar text color */
+[data-testid="stSidebar"] .css-1d391kg {
+    color:rgb(255, 255, 255); 
+}
+
+/* Style specific headers */
+h1 {
+    color:rgb(255, 255, 255); 
+}
+
+h2 {
+    color:rgb(255, 255, 255);
+}
+
+/* Style specific links */
+a {
+    color:rgb(255, 255, 255);
+}
+</style>
+"""
+
 st.markdown(page_bg_css, unsafe_allow_html=True)
+
+st.markdown(custom_text_css, unsafe_allow_html=True)
 
 st.sidebar.title("InternationalAir")
 st.sidebar.subheader("The best way to travel")
