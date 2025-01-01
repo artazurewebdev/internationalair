@@ -17,18 +17,7 @@ page_bg_css = """
 </style>
 """
 
-global_text_css = """
-<style>
-/* Apply global styling to all text */
-[data-testid="stAppViewContainer"] * {
-    color: #FFFFFF;
-}
-</style>
-"""
-
 st.markdown(page_bg_css, unsafe_allow_html=True)
-
-st.markdown(global_text_css, unsafe_allow_html=True)
 
 st.sidebar.title("InternationalAir")
 st.sidebar.subheader("The best way to travel")
