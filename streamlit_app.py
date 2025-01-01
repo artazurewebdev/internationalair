@@ -21,9 +21,7 @@ global_text_css = """
 <style>
 /* Apply global styling to all text */
 [data-testid="stAppViewContainer"] * {
-    color: #2E8B57; /* Sea Green */
-    font-family: "Arial", sans-serif; /* Font family */
-    font-size: 18px; /* Text size */
+    color: #FFFFFF;
 }
 </style>
 """
